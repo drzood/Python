@@ -5,5 +5,5 @@
 # - 7 -> да
 # - 1 -> нет
 
-num = int(input('Num = '))
-print(5 < num < 8)
+num = int(input('Num = '))   # ввод  
+print(5 < num < 8)           # выводи булева

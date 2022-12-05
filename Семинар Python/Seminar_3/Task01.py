@@ -1,9 +1,9 @@
 # Реализуйте алгоритм перемешивания списка
 
-import time
-import random
+import time          # вызываем модуль время
+import random        # вызываем модуль случайного числа
 
-def rand_num(min = 0, max = 10):
+def rand_num(min = 0, max = 10): 
     num = int((time.time() % 1) * (max - min) + min)
     return num
 

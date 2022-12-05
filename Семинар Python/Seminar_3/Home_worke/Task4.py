@@ -6,16 +6,16 @@
 #     - 3 -> 11
 #     - 2 -> 10
 
-lst = []
+lst = []             # создаем пустой список для записи двоичного числа
 
-def binari(num):
-    if num == 0:
+def binari(num):     # создаем метод заполнения списка двоичными числами
+    if num == 0:     # если нам равно 0, возвращаем 1
         return 1
-    bin = num % 2
-    lst.append(bin)
-    binari(num // 2)
+    bin = num % 2    # создаем переменную и записываем остаток от деления (0 или 1)
+    lst.append(bin)  # добавляем в список
+    binari(num // 2) # запускаем рекурсия используя целочисленное деление на 2
 
-num = int(input('num = '))
-binari(num)
-lst.reverse()
-print(lst)
+num = int(input('num = ')) # ввод
+binari(num)          # запускаем метод
+lst.reverse()        # переворачиваем список
+print(lst)           # выводим
