@@ -4,3 +4,14 @@
 
 # Пример:
 #     - [1.1, 1.2, 3.1, 5.1, 10.01] => 0.19
+
+l = [1.1, 1.2, 3.1, 5.1, 0.01]
+lst = []
+
+for i in range(len(l)):
+    lst.append(round(l[i] - int(l[i]), 2))
+
+print(l)
+print(lst)
+
+print(max(lst) - min(lst))

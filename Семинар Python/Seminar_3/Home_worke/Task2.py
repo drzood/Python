@@ -5,3 +5,9 @@
 # Пример:
 #     - [2, 3, 4, 5, 6] => [12, 15, 16];
 #     - [2, 3, 5, 6] => [12, 15]
+
+lst = [2, 3, 5, 7]
+sum_lst = []
+for i in range(int(round(len(lst) / 2 + .5))):
+    sum_lst.append(lst[i] + lst[-1-i])
+print(sum_lst)
