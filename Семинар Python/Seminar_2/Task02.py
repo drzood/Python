@@ -12,5 +12,10 @@
 # print(n_list)
 
 n = int(input('N = '))
-n_list = {i: 3 * i + 1 for i in range(1, n+1)}
-print(n_list)
+# n_list = {i: 3 * i + 1 for i in range(1, n+1)}
+# print(n_list)
+
+cl = []
+for i in range(n):
+    cl.append(3 * (i + 1) + 1)
+    print(f'{i + 1}:{cl[i]}', end=" ")

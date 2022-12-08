@@ -2,8 +2,8 @@
 # показывает диапазон возможных координат точек в этой четверти (x и y).
 
 a = int(input(f'Введите от 1 до 4: \n'))
-if a < 1 or a > 4: print ('Проверьте условия')
-elif a == 1: print(f'x, y')
+if a == 1:   print(f'x, y')
 elif a == 2: print(f'-x, y')
 elif a == 3: print(f'-x, -y')
-else:        print(f'x, -y')
+elif a == 4: print(f'x, -y')
+else:        print('Проверьте условия')

@@ -173,7 +173,7 @@
 # for i in numbers:
 #   i *= 2
 #   print(i) # [20, 4, 6, 8, 10]
-# print(numbers) # [10, 2, 3, 4, 5
+# print(numbers) # [10, 2, 3, 4, 5]
 
 # colors = ['red', 'green', 'blue']
 # for e in colors:

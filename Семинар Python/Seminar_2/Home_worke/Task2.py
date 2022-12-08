@@ -10,3 +10,11 @@ for i in range(1, n + 1):   # цикл от 1 до n+1
     sum *= i                # считаем каждое произведение
     print(sum, end=' ')     # вывод в строку через пробел
     
+# n = float(input('Введите число - '))
+# while n % 1 > 0:
+#     n *= 10
+#     summ = 0
+# while n > 0:
+#     summ += n % 10
+#     n //= 10
+# print(int(summ))

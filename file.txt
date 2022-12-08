@@ -1,3 +1,3 @@
 -5
 6
-8
+8& C:/Users/09708/AppData/Local/Microsoft/WindowsApps/python3.10.exe "c:/Users/09708/Desktop/GB/2 четверть/Python/Семинар Python/Seminar_4/task.py"
