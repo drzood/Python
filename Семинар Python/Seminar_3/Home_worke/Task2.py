@@ -8,6 +8,14 @@
 
 lst = [2, 3, 5, 7]   # задаем список
 sum_lst = []         # создаем пустой список
-for i in range(int(round(len(lst) / 2 + .5))):  # цикл с длинной списка деленный пополам и округлением в большую сторону
+for i in range(int(round(len(lst) // 2 + 1))):  # цикл с длинной списка деленный пополам и округлением в большую сторону
     sum_lst.append(lst[i] + lst[-1-i]) # складываем ячейки списка согласно заданию
 print(sum_lst)       #  выводим
+
+#list = [3, 4, 5, 6]
+#result_list = []
+#for i in range((len(list)+1)//2):
+#   result_list.append(list[i]*list[len(list)-1-i])
+#print()
+#print(result_list)
+#print()

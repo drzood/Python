@@ -19,3 +19,17 @@ num = int(input('num = ')) # ввод
 binari(num)          # запускаем метод
 lst.reverse()        # переворачиваем список
 print(lst)           # выводим
+
+# import random
+# a = random.randint(0, 100)
+# b = a
+# # print(a)
+# # print(bin(a))
+# c = ""
+# while b > 0:
+#     c = str(b % 2) + c
+# b = b // 2
+# print(f"{a} -> {c}")
+
+n = int(input("Введите число:\n"))
+print(f'{n} -> {bin(n)[2::]}')

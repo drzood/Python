@@ -15,3 +15,10 @@ print(l)
 print(lst)
 
 print(max(lst) - min(lst))     # выводим разницу путем вычитания из большего меньшее
+
+# import random
+# b = int(input('Введите кол-во чисел в списке for 2# = '))
+# list_b = list(random.randint(0, 10) for i in range(b))
+# print(list_b)
+# proiz_b = list(list_b[i]*list_b[-1*(1+i)] for i in range(b//2+1*(b%2)))
+# print(proiz_b) 

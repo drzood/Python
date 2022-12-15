@@ -9,3 +9,7 @@ sum = 0                          # переменная для суммы
 for i in range(1, len(lst), 2):  # цикл счет с первого индекса по 2
     sum += lst[i]                # сыитаем сумму
 print(sum)                       # вывод
+
+
+# my_list = [8, 5, 7, 3, 6]
+# print(sum(my_list[1::2]))
