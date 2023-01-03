@@ -9,3 +9,5 @@
 # string_num = list(filter(lambda x: len(str(abs(int(x)))) == 2, input('n = ').split()))
 string_num = list(filter(lambda x: (-100 < int(x) < -9) or (10 < int(x) < 100), input('n = ').split()))
 print(*string_num)
+
+# print(sum(map(int, (filter(str.isdigit, input("Введите вещественное число: "))))))
