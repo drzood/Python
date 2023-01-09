@@ -1,4 +1,3 @@
-
 def list_items():
     return ['Name', 'Last name', 'Position', 'Salary']
     

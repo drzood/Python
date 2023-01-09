@@ -1,7 +1,13 @@
 import view as v
-
 import json
 import csv
+import logging
+
+
+def import_file(path):
+    with open(path, encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile, delimiter=';')
+        return list(reader)
 
 def add_an_employee(): # добавить сотрудника
     x, y = '', []
@@ -14,6 +20,7 @@ def add_an_employee(): # добавить сотрудника
             break
         else:
             print(f'\nВы ввели {x}, повторите попытку и ответьте только Да или Нет.\n')
+            logging.info(f'Ответ {x}')
     return y
 
 def exp_list_of_employees(x): # экспорт бд
@@ -36,6 +43,7 @@ def search_employee(x):
                 e = i
                 n += 1
     print(f'Найдено соотвестсвий: {n}\n')
+    logging.info(f'Найдено соотвестсвий: {n}')
     return e
 
 def delete_employee(x):
@@ -46,7 +54,9 @@ def delete_employee(x):
         z = input(f'Вы уверены, будет удален №{y}? Да/Нет   ')
         if z == 'Да' or z == 'да':      x.pop(y)
         elif z == 'Нет' or z == 'нет':  return x
-    else:       print('Проверььте введенные данные и при небходиости повториет попытку.')
+    else:       
+        print('Проверььте введенные данные и при небходиости повториет попытку.')
+        logging.info(f'Ответ {z}')
     return x
 
 def change_data_employee(x):
